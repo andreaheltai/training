@@ -1,0 +1,723 @@
+@font-face {
+	font-family: 'League Spartan';
+	src: url('../fonts/leaguespartan-bold.eot');
+	src: url('../fonts/leaguespartan-bold.woff2') format('woff2'),
+		 url('../fonts/leaguespartan-bold.woff') format('woff'),
+		 url('../fonts/leaguespartan-bold.ttf')	format('truetype');
+	font-weight: bold;
+}
+
+/*GENERAL DECLARATIONS*/
+body { 
+   overflow-x: hidden;
+}
+
+.vertical-text {
+	writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    margin: 0;
+}
+
+.vertical-line {
+	border: 1px solid #5da8ef;
+    height: 100px;
+    width: 1px;
+    margin: auto;
+}
+
+.description {
+	line-height: 1.5;
+}
+
+/*COLOR DECLARATIONS*/
+.pink {
+	color: #ce60a8;
+}
+
+.blue {
+	color: #5da8ef;
+}
+
+.black, .navbar li a, .footer li a, h1, h2, .shop .surf-title, .shop .buy, 
+.article .art-title, .rd-more, .address { 
+	color: #0b0c11;
+	opacity: 1;
+}
+
+.article .number {
+	color: #f9f9f9;
+}
+
+.shop .type {
+	color: #7a7a7a;
+}
+
+.description {
+	color: #616161;
+}
+
+.hero .description {
+	color: #8f8f8f;
+}
+
+.hero .grey {
+	color: #ebebeb;
+}
+
+.opacity, i {
+	opacity: 0.2;
+}
+
+/*FONT DECLARATIONS*/
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+}
+
+.quote-text, .shop .surf-title, .contact .address {
+	font-family: 'Playfair Display', serif;
+}
+
+.description, .surf-type, .shop .price {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
+.navbar li a, .footer li a, .font-spartan, .hero .pag, .vertical-text, 
+.rd-more, .shop .buy, .article .number, .subscribe input {
+	font-family: 'League Spartan', sans-serif;
+}
+
+.rd-more, .contact .blue {
+	display: inline;
+	padding: 5px 0;
+	border-bottom: 2px solid #5da8ef;
+}
+
+/*FONT SIZE*/
+.navbar li a, .footer li a, .quote .author, .vertical-text, .rd-more, .shop .buy, .small, .subscribe input  { 
+	font-size: 9px; 
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.hero .pag { 
+	font-size: 10px; 
+	letter-spacing: 5px;
+}
+
+.shop .surf-type {
+	font-size: 12px;
+	letter-spacing: 3px;
+	margin: 0;
+}
+
+.description {
+	font-size: 14px;
+}
+
+.shop .price {
+	font-size: 20px;
+}
+
+.quote-text, .shop .surf-title {
+	font-size: 26px;
+}
+
+.contact .address {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+h1 {
+	font-size: 62px;
+}
+
+.article .number {
+	font-size: 130px;
+}
+
+/*BACKGROUND DECLARATIONS*/
+body {
+	background-color: #fff;
+	background-image: linear-gradient(90deg, white 99.5%, #f5f5f5 0.5%);
+	background-size: 300px, 50px;
+}
+
+.shop {
+	background: transparent url('../images/shop-bg.png') no-repeat center center;
+	background-size: cover;
+}
+
+.surfer.container-fluid {
+	background: transparent url('../images/subscribe-bg.png') no-repeat center center;
+	background-size: cover;
+}
+
+.sandy-bg {
+	background: #eaeaea;
+	max-width: 250px;
+	min-width: 180px;
+	max-height: 320px;
+	min-height: 230px;
+}
+
+.media .front {
+	background: url('../images/video-img.png') no-repeat 100% 100%;
+}
+
+/*HEADER DECLARATIONS*/
+
+.top-info {
+	padding: 15px 0 0 0;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: transparent;
+	color: #5da8ef;
+}
+
+.icon-bar {
+	background-color: #0b0c11;
+	padding: 2% 0 0 0;
+}
+
+.vertical i {
+	display: block;
+	margin: 30px 0 0 0;
+	font-size: 20px;
+}
+
+.navbar-nav {
+	margin: 5px 0 0 190px;
+}
+
+.navbar-brand {
+	padding: 15px;
+}
+
+.top-info .vertical {
+	padding: 15px 50px 0 0;	
+	position: relative;
+	top: 0;
+	right:0;
+}
+
+.top-info .social-icons {
+	position: absolute;
+	right: 50px;
+	bottom: -150%;
+}
+
+.top-info .vertical-text {
+	position: relative;
+	top: 0;
+	right: 0;
+	padding: 0 90% 0 0;
+	min-height: 15px;
+}
+
+
+/*HERO DECLARATIONS*/
+.arrow-left {
+	padding: 0 5px 0 0;
+	z-index: 1000;
+}
+
+.arrow-right {
+	padding: 0 0 0 5px;
+	z-index: 1000;
+}
+
+.hero .text {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	padding: 0 0 0 30px;
+	width: 50%;
+}
+
+.hero h1 {
+	margin: 30px 0;
+}
+
+.hero .description {
+	width: 50%;
+}
+
+.text .pages {
+	margin: 30% 0 0 0;
+}
+
+/*QUOTE DECLARATIONS*/
+.quote {
+	text-align: center;
+}
+
+.quote-text {
+	margin: 20% 0 5% 0;
+}
+
+.quote .author {
+	margin: 0 0 30px 0;
+}
+
+/*MEDIA DECLARATIONS*/
+.media .row {
+	padding: 10px 0;
+}
+
+.media .back {
+	margin: 60px 0;
+	z-index: 100;
+}
+
+.media .front {
+	position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 101;
+    width: 100%;
+    height: 110%;
+}
+
+.media .text {
+	margin: 0 0 0 9%;
+	z-index: 102;
+	position: relative;
+}
+
+.media .description {
+	width: 25%;
+}
+
+.rd-more {
+	margin: 50px 0 0 0;
+}
+
+.play {
+    display: block;
+    position: absolute;
+    right: 320px;
+    bottom: 35%;
+    margin: auto;
+}
+
+/*SHOP DECLARATIONS*/
+.shop {
+	padding: 10% 0 5% 0;
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.shop > .row {
+	width: 90%;
+	margin: 5% auto;
+	text-align: left;
+}
+
+.shop .arrow-left {
+	position: absolute;
+    top: 65%;
+    left: 25px;
+}
+
+.shop .arrow-right {
+	position: absolute;
+    top: 65%;
+    right: 25px;
+}
+
+.product {
+	margin: 0;
+	padding: 0;
+}
+
+.product img {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 490px;
+	width: 224px;
+}
+
+.product .product-text{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+}
+
+.product .sandy-bg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 300px;
+	width: 225px;
+}
+
+.product-text .price, .product-text .buy {
+	margin: 0 0 5px 50px;
+}
+
+/*ARTICLE DECLARATIONS*/
+.article {
+	margin: 5% 0 0 0;
+}
+
+.article .description {
+	padding: 5% 0 7% 0;
+	width: 80%;
+}
+
+.article .text {
+	position: relative;
+    top: -120px;
+    left: 0;
+    max-height: 350px;
+}
+
+.article-1 img {
+	float: right;
+}
+
+.article-1 .vertical-text {
+	padding: 0 0 8px 0;
+}
+
+.underlined {
+	padding: 5px 0;
+	border-bottom: 2px solid #5da8ef;
+}
+
+.article-2 img {
+	float-right
+}
+
+.article-2 .vertical-text {
+	padding: 8px 90% 0 0;
+    min-height: 15px;
+}
+
+/*SUBSCRIBE DECLARATIONS*/
+.subscribe {
+	text-align: center;
+	padding: 0 0 7% 0;
+}
+
+.subscribe .vertical-line {
+	margin: 15% auto 10% auto;
+}
+
+.subscribe .text {
+	margin: 5% 0 5% 0;
+}
+
+.subscribe .description {
+	margin: 0 0 30px 0;
+}
+
+.subscribe .form-control {
+	background-color: #f5f5f5;
+	border: 1px solid #efefef;
+	padding: 0 30px;
+	height: 50px;
+}
+
+.subscribe .input-group-btn > .btn-secondary {
+	height: 50px;
+	width: 50px;
+}
+
+.input-group .form-control:first-child, .input-group-btn:last-child>.btn {
+	border-radius: 0;
+}
+
+input.form-control::-moz-placeholder {
+  color: #333333;
+  opacity: 1;
+}
+
+input.form-control:-ms-input-placeholder {
+  color: #333333;
+}
+
+input.form-control::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.input-group-btn:last-child>.btn {
+	background-color: #5da8ef;
+}
+
+/*CONTACT DECLARATIONS*/
+.contact {
+	padding: 0 0 5% 0;
+}
+
+.contact .image {
+	padding: 0;
+}
+
+.contact .text {
+	padding: 7% 5%;
+}
+
+.contact .address {
+	margin: 5%;
+	width: 320px;
+	font-weight: 600;
+}
+
+/*FOOTER DECLARATIONS*/
+.footer {
+	text-align: center;
+}
+
+.footer > a {
+	display: block;
+	text-align: center;
+}
+
+.footer .nav {
+	margin: 40px 0;
+}
+
+.footer .nav>li, .footer li>a {
+	display: inline;
+}
+
+.footer i {
+	margin: 30px 15px 5% 15px;
+	font-size: 20px;
+}
+
+/*MD DECLARATIONS*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.hero .pull-right {
+		width: 80%;
+	}
+
+	.article-1 img {
+		margin: 15% 0 0 0;
+	}
+
+	.article-1 .vertical-text {
+    	margin: 100% 0 0 0;
+	}
+
+	.article-2 .image {
+		margin: 0 30px 0 0;
+	}
+
+	.contact {
+		margin: 5% 0 0 0;
+	}
+
+	.contact .text {
+		padding: 7% 5%;
+	}
+
+	.quote .row {
+		margin: 10% auto 5% auto;
+	}
+}
+
+/*SM DECLARATIONS*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.hero .description {
+		width: 90%;
+	}
+
+	.hero .img-responsive {
+		width: 90%;
+	}
+
+	.text .pages {
+    	margin: 10% 0 0 0;
+	}
+
+	.top-info .social-icons {
+    	right: 40px;
+    	bottom: -90%;
+	}
+
+	.media .front, .play {
+		display: none;
+	}
+
+	.media .back {
+		margin: 30px 0;
+	}
+
+	.media .description {
+		width: 60%;
+	}
+
+	.article {
+		margin: 0;
+	}
+
+	.article img {
+		margin: 15% 0 0 0;
+	}
+
+	.article .vertical-text {
+    	margin: 100% 0 0 0;
+	}
+
+	.subscribe .vertical-line {
+	    margin: 0% auto 10% auto;
+	}
+
+	.vertical-line {
+		height: 80px;
+	}
+
+	.contact {
+		margin: 5% 0 0 0;
+	}
+
+	.contact .text {
+		padding: 0 0 0 30px;
+	}
+}
+
+/*XS DECLARATIONS*/
+@media screen and (max-width: 767px) {
+	.top-info {
+		padding: 0 10px;
+	}
+
+	.hero .text {
+		position: static;
+		margin: 10% 0 0 0;
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	.hero .description {
+		width: 100%;
+	}
+
+	.text .pages {
+ 	   margin: 10% 0 0 0;
+	}
+
+	.hero .pull-right {
+		padding: 5% 0;
+	}
+
+	.media .back {
+		margin: 40px 0;
+	}
+
+	.media .description {
+		width: 100%;
+	}
+
+	.shop {
+		padding: 10% 0 0 0;
+	}
+
+	.shop .arrow-left {
+		left: 50px;
+	}
+
+	.shop .arrow-right {
+		right: 50px;
+	}
+
+	.product img, .product .sandy-bg {
+		left: 25px;
+	}
+
+	.article .col-xs-10 {
+		max-height: 430px;
+	}
+
+	.article .row {
+		margin: 10% 0;
+	}
+
+	.subscribe {
+		padding: 0 0 15% 0;
+	}
+
+	.subscribe .vertical-line {
+		margin: 5% auto;
+	}
+
+	.contact {
+	    padding: 0 0 10% 0;
+	}
+
+	.contact .address {
+		width: 100%;
+	}
+
+	.footer li>a {
+		display: block;
+	}
+
+	h1 {
+		font-size: 51px;
+	}
+
+	.navbar li>a {
+		text-align: right;
+	}
+}
+
+/*IE DECLARATIONS*/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.top-info .vertical-text {
+		padding: 0 18% 0 0;
+		float: right;
+	}
+
+	.play {
+		bottom: 10%;
+	}
+
+	.article .vertical-text {
+		float: right;
+	}
+
+	.article-1 .vertical-text {
+		padding: 0 0 0 20%;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 992px) and (max-width: 1199px) {
+	.article-1 .vertical-text {
+		margin: 0;
+		padding: 0 0 20% 20%;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 768px) and (max-width: 991px) {
+	.article .vertical-text {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
