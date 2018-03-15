@@ -1,0 +1,1053 @@
+/*FONT DECLARATIONS*/
+@font-face {
+	font-family:'Varela Round';
+	src: url('../fonts/VarelaRound-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family:'Lato';
+	src: url('../fonts/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family:'Lato';
+	src: url('../fonts/Lato-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family:'Lato';
+	src: url('../fonts/Lato-Light.ttf') format('truetype');
+	font-weight: lighter;
+}
+
+
+body {
+	font-family: Lato;
+}
+
+h1, h2 {
+	font-family: 'Varela Round';
+}
+
+h4 {
+	font-weight: lighter;
+}
+
+.nav li>a,
+.worldwide p.text-uppercase,
+.interface p.text-uppercase,
+.testimonial p.text-uppercase,
+.pricing p.text-uppercase,
+.sitemap .title,
+footer .creator {
+	font-weight: bold;
+}
+
+/*FONT COLOR DECLARATIONS*/
+
+/*Black*/
+body, a {
+	color: #26272d;
+}
+
+/*Grey*/
+.nav li>a:hover, 
+.nav li>a:focus,
+.description, .more, 
+.benefits p, 
+.interface p.text-uppercase, 
+.invite p.text-uppercase, 
+.sitemap .menu a, 
+footer .freebies {
+	color: #8c8f94;
+}
+
+/*White*/
+.full-btn, 
+.mockup .try, 
+.invite button,
+.starter a,
+.subscribe button {
+	color: #fff;
+}
+
+/*Blue*/
+.pro a{
+	color: #267df4;
+}
+
+/*FONT SIZE DECLARATIONS*/
+h1 {
+	font-size: 62px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 26px;
+}
+
+.description, .full-btn > i {
+	font-size: 20px;
+}
+
+.benefits p {
+	font-size: 18px;
+}
+
+.sitemap .menu a, 
+.pricing input, 
+.nav li>a, 
+.plan .benefits, 
+.hero a.btn, 
+.mockup a.btn, 
+.invite input, 
+.invite button, 
+.subscribe input, 
+.subscribe button {
+	font-size: 16px;
+}
+
+.more, footer .freebies {
+	font-size: 14px;
+}
+
+.worldwide p.text-uppercase, 
+.sitemap .title, 
+.interface p.text-uppercase, 
+.testimonial p.text-uppercase, 
+.pricing p.text-uppercase {
+	font-size: 12px;
+}
+
+.plan .price {
+	font-size: 11px;
+}
+
+footer .creator {
+	font-size: 9px;
+}
+
+/*BACKGROUND DECLARATIONS*/
+main {
+	background: #f3f4f5 url('../images/hero-bg.png') center center;
+	background-size: cover;
+}
+
+body, .benefits, .mockup, .worldwide, .testimonial, .subscribe, .sitemap, footer {
+	background-color: #fff;
+}
+
+
+.interface, .invite, .pricing {
+	background-color: #f5f5f8;
+}
+
+
+.interface img {
+	max-width: 100%;
+}
+
+/*GENERAL DECLARATIONS*/
+.brand {
+	margin: 0 auto;
+}
+
+.full-btn {
+	background-color: #267df4;
+	padding: 12px 20px;
+	border-radius: 25px;
+}
+
+.ghost-btn {
+	background-color: transparent;
+	padding: 12px 20px;
+	border: 1px solid rgba(38, 39, 45, 0.102);
+	border-radius: 25px;
+}
+
+.benefits .hr, .subscribe .hr, .sitemap .hr {
+	border-bottom: 1px solid rgba(38, 39, 45, 0.102);
+}
+
+
+/*MENU DECLARATIONS*/
+main .menu {
+	padding: 2% 0;
+}
+
+.navbar-brand {
+	height: auto;
+	float: none;
+	margin: 0 auto;
+}
+
+.nav li>a {
+	padding: 10px 15%;
+}
+
+.nav li>a:hover, .nav li>a:focus {
+	background-color: initial;
+}
+
+.text-capitalize.full-btn:hover, .text-capitalize.full-btn:focus {
+	background-color: #267df4;
+}
+
+.navbar-nav>li>a.full-btn:hover, .navbar-nav>li>a.full-btn:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navbar-nav>li>a.full-btn {
+	padding: 10px 15px 15px 15px;
+}
+
+.menu .full-btn > i, .glyphicon {
+	padding: 0 10px 0 0;
+}
+
+.menu .full-btn {
+	word-spacing: 5px;
+}
+
+/*HERO DECLARATIONS*/
+
+main .hero {
+	text-align: center;
+	height: 850px;
+	overflow: hidden;
+}
+
+.hero .description {
+	margin: 40px auto 60px auto;
+	width: 60%;
+}
+
+.hero .ghost-btn {
+	display: block;
+	width: 200px;
+	margin: 0 auto 60px auto;
+	word-spacing: 5px;
+}
+
+.hero img {
+	position: relative;
+	top: 0;
+	left: 25px;
+	margin: 0 auto;
+}
+
+/*BENEFITS DECLARATIONS*/
+.benefits {
+	margin: 7% 0;
+}
+
+.benefit {
+	margin: 0 10%;
+}
+
+.benefit h4 {
+	padding: 40px 0;
+}
+
+.benefits .hr {
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+/*MOCKUP DECLARATIONS*/
+.phone {
+	padding-left: 0;
+}
+.mockup h2 {
+	margin: 20% 0 8% 0;
+}
+
+.mockup .description {
+	width: 60%;
+	margin: 0 0 10% 0;
+}
+
+.mockup .full-btn {
+	margin: 0 20px 0 0;
+}
+
+.mockup .full-btn > i {
+	padding: 0 0 0 50px;
+}
+
+/*WORLDWIDE DECLARATIONS*/
+.worldwide {
+	margin: 8% 0;
+}
+
+.worldwide .world {
+	padding-right: 0;
+}
+
+.worldwide .world img {
+	float: right;
+}
+
+.worldwide .description {
+	width: 80%;
+	margin: 70px 0;
+}
+
+.worldwide p.text-uppercase {
+	margin: 0 0 30px 0;
+}
+
+.worldwide .logos {
+	margin-right: 30px;
+}
+
+/*INTERFACE DECLARATIONS*/
+.interface {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.interface .hr {
+	border-color: #267df4;
+	width: 50px;
+	margin: 5% auto;
+}
+
+.interface p.text-uppercase {
+	margin:0 0 50px 0;
+}
+
+.screen {
+	display: inline;
+}
+
+.screen:not(.main) {
+	margin-top: 80px;
+}
+
+.phones {
+	padding: 0;
+}
+
+.float-none {
+	float: none;
+}
+
+/*INVITE DECLARATIONS*/
+.invite .logo {
+	opacity: 0.5;
+	max-height: 10px;
+}
+
+.invite h2 {
+	margin: 10% 0;
+}
+
+.form-control {
+	border-right: 0px;
+}
+
+.input-group input{
+	height: 50px;
+	border-radius: 25px;
+}
+
+.input-group-btn:last-child > .btn {
+	background-color: #6fc754;
+	border-radius: 25px;
+	height: 40px;
+	margin: 4px;
+	padding: 0 30px;
+}
+
+.input-group button > i {
+	padding: 0 0 0 30px;
+}
+
+.input-group > .input-group-btn {
+	background-color: #fff;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.invite p.text-uppercase {
+	margin: 70px 0 15px 0;
+}
+
+.invite img.img-responsive {
+	margin: 0 auto 20% auto;
+}
+
+/*TESTIMONIAL DECLARATIONS*/
+.testimonial{
+	text-align: center;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
+.testimonial .user {
+	display: inline;
+}
+
+.testimonial .opacity {
+	opacity: 0.2;
+}
+
+.user:not(.opacity) {
+	margin: 0 18%;
+}
+
+.testimonial .arrow {
+	margin: 50% 0 0 0;
+}
+
+.testimonial h3 {
+	margin: 60px 0;
+}
+
+.testimonial .rating {
+	margin: 30px 0 70px 0;
+}
+
+.testimonial .rating span {
+	color: #f2bc3b;
+	font-size: 25px;
+}
+
+/*PRICING DECLARATIONS*/
+.pricing {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.pricing .identify {
+	margin: 65px 0 20px 0;
+}
+
+.pricing .left .description {
+	width: 80%;
+	margin: 15% 0 8% 0;
+}
+
+.pricing .left a, .freebies a {
+	text-decoration: underline;
+	color: #267df4;
+}
+
+.starter {
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	height: 550px;
+	padding: 65px 5px;
+	width: 48%;
+	box-shadow: 10px 10px 30px rgba(169, 169, 169, 0.1);
+	z-index:999;
+}
+
+.pro {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: center;
+	height: 510px;
+	padding: 45px 5px;
+	margin: 20px 0 0 0;
+	width: 43%;
+}
+
+.pro, .pro .benefits {
+	background-color: #ebebed;
+}
+
+.plan .price {
+	border: 1px solid rgba(38, 39, 45, 0.2);
+	padding: 5px 10px;
+	border-radius: 15px;
+	display: inline-block;
+	min-width: 60px;
+	margin: 20px auto 40px auto;
+}
+
+.plan .description {
+	margin: 0 0 40px 0;
+}
+
+.plan i {
+	padding-right: 10px;
+	color: #6fc754;
+	font-size: 14px;
+}
+
+.plan a.btn {
+	width: 200px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.plan a.full-btn {
+	margin: 50px auto;
+}
+
+.plan a.ghost-btn {
+	border: 1px solid #267df4;
+	color: #267df4;
+	margin: 10px auto;
+}
+
+.plan a.ghost-btn:hover, .plan a.ghost-btn:active, .plan a.ghost-btn:focus {
+	color: #26272d;
+}
+
+
+/*PRICE TOGGLE SWITCH CODE*/
+.can-toggle {
+  position: relative;
+}
+.can-toggle *, .can-toggle *:before, .can-toggle *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1px;
+}
+.can-toggle input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label {
+  pointer-events: none;
+}
+.can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+  opacity: 0.4;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+  content: attr(data-unchecked);
+  left: 0;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  content: attr(data-checked);
+}
+.can-toggle label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.can-toggle label .can-toggle__label-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 32px;
+}
+.can-toggle label .can-toggle__switch {
+  position: relative;
+}
+.can-toggle label .can-toggle__switch:before {
+  content: attr(data-checked);
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+.can-toggle label .can-toggle__switch:after {
+  content: attr(data-unchecked);
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  background: white;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.can-toggle input[type="checkbox"][disabled] ~ label {
+  color: #26292c;
+  opacity: 0.5;
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch {
+  background-color: transparent;
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  color: #26292c;
+}
+.can-toggle input[type="checkbox"]:hover ~ label {
+  color: #26292c;
+  opacity: 0.9;
+}
+.can-toggle input[type="checkbox"]:checked ~ label:hover {
+  color: #26292c;
+  opacity: 0.9;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch {
+  background-color: transparent;
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  color: #26292c;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+  background-color: transparent;
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  color: #26292c;
+}
+.can-toggle label .can-toggle__label-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.can-toggle label .can-toggle__switch {
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+  background: transparent;
+  border: 1px solid rgba(38, 39, 45, 0.102);
+}
+.can-toggle label .can-toggle__switch:before {
+  color: #26292c;
+  opacity: 0.3;
+}
+.can-toggle label .can-toggle__switch:after {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1), -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+  color: #26292c;
+}
+.can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+  -webkit-transform: translate3d(121px, 0, 0);
+          transform: translate3d(121px, 0, 0);
+}
+.can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.can-toggle label .can-toggle__switch {
+  height: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  border-radius: 25px;
+}
+.can-toggle label .can-toggle__switch:before {
+  right: 2px;
+  font-size: 16px;
+  line-height: 42px;
+  width: 130px;
+  padding: 0 12px;
+}
+.can-toggle label .can-toggle__switch:after {
+  top: 2px;
+  left: 2px;
+  border-radius: 21px;
+  min-width: 130px;
+  line-height: 42px;
+  font-size: 16px;
+}
+.can-toggle label .can-toggle__switch:hover:after {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*SUBSCRIBE DECLARATIONS*/
+.subscribe {
+	margin: 5% auto;
+	text-align: center;
+}
+
+.subscribe .input-group {
+	margin: 50px auto 30px auto;
+}
+
+.subscribe .hr {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*SITEMAP DECLARATIONS*/
+.sitemap .more {
+	margin: 30px 0 0 0;
+	width: 65%;
+}
+
+.sitemap .crop {
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    margin: 7% 0 7% 0;
+}
+
+.sitemap .crop img {
+    margin: -50px 0 0 0;
+}
+
+.sitemap i {
+	color: #8c8f94;
+	opacity: 0.8;
+	font-size: 20px;
+	margin-right: 25px;
+}
+
+.sitemap .menu a {
+	display: block;
+	line-height: 1.8;
+}
+
+.sitemap .hr {
+	margin-top: 5%;
+}
+
+/*FOOTER DECLARATIONS*/
+footer {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+footer img.img-responsive {
+	display: inline;
+	padding-left: 10px;
+}
+
+footer .creator {
+	display: inline-block;
+}
+
+footer .freebies {
+	padding: 5px 0 0 0;
+}
+
+/*LG DECLARATIONS*/
+@media screen and (min-width: 1200px) {
+	.pricing h2 {
+		width: 90%;
+	}
+}
+
+/*MD DECLARATIONS*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+	.navbar-brand {
+		padding: 10px 10px;
+		margin: 5px 0;
+	}
+
+	.mockup .description {
+		width: 80%;
+	}
+
+	.worldwide .world img {
+		margin: 20% 0 0 0;
+	}
+
+	.testimonial .arrow {
+		margin: 60% 0;
+	}
+
+	.testimonial .rating {
+		margin: 30px 0 50px 0;
+	}
+
+	.invite h2 {
+		margin: 8% 0;
+	}
+
+	.pricing .starter {
+		width: 50%;
+	}
+
+	.pricing .pro {
+		width: 48%;
+	}
+}
+
+/*SM DECLARATIONS*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	.description {
+		font-size: 18px;
+	}
+
+	.navbar-brand {
+		padding: 0;
+		margin: 15px 0;
+	}
+
+	.nav li>a {
+		font-size: 14px;
+		padding: 10px 8px;
+	}
+
+	.navbar-nav>li>a.full-btn {
+    	padding: 5px 10px 10px 10px;
+	}
+
+	.main .hero {
+		height: 870px;
+	}
+
+	.benefit h4 {
+		padding: 20px 0;
+	}
+
+	.mockup h2 {
+	    margin: 0 0 8% 0;
+	}
+
+	.mockup .description {
+		width: 80%;
+	}
+
+	.worldwide .world img {
+		margin: 20% 0 0 0;
+	}
+
+	.worldwide .description {
+	    width: 95%;
+	    margin: 40px 0;
+	}
+
+	.worldwide .logos {
+	    margin-right: 10px;
+	}
+
+	.invite p.text-uppercase {
+	    margin: 50px 0 15px 0;
+	}
+
+	.testimonial .arrow {
+		margin: 120% 0;
+	}
+
+	.testimonial .rating {
+		margin: 30px 0 50px 0;
+	}
+
+	.invite h2 {
+		margin: 8% 0;
+	}
+
+	.pricing .left {
+		text-align: center;
+	}
+
+	.pricing .left .description {
+	    margin: 8% auto 3% auto;
+	}
+
+	.pricing .more {
+		margin: 0 0 50px 0;
+	}
+
+	.pricing .can-toggle__switch {
+		margin: 0 auto;
+	}
+
+	.pricing .starter {
+		width: 50%;
+	}
+
+	.pricing .pro {
+		width: 48%;
+	}
+
+	.sitemap .crop {
+		margin: 4% 0;
+	}
+
+	.sitemap .left {
+		margin-bottom: 30px;
+	}
+}
+
+/*XS DECLARATIONS*/
+@media screen and (max-width: 767px) {
+	.navbar-header .icon-bar {
+		background-color: black;
+	}
+
+	.navbar-brand {
+		margin-top: 5px;
+	}
+
+	.nav li>a {
+		text-align: right;
+		padding-right: 25px;
+	}
+
+	.ghost-btn {
+		border: 1px solid rgba(38, 39, 45, 0.8);
+	}
+
+	.hero img {
+		left: 15px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	.hero .description, 
+	.mockup .description, 
+	.worldwide .description, 
+	.pricing .left .description,
+	.sitemap .more {
+		width: 100%;
+	}
+
+	.benefit {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.benefit h4 {
+		padding: 20px 0;
+	}
+
+	.plan a.btn {
+		width: 130px;
+		margin: 30px auto 40px auto;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	.worldwide {
+		margin: 15% 0;
+	}
+
+	.worldwide .description {
+		margin: 30px 0;
+	}
+
+	.worldwide .logos {
+		max-width: 35%;
+		margin-bottom: 30px;
+	}
+
+	.mockup h2 {
+		margin: 10% 0 8% 0;
+	}
+
+	.interface {
+		padding-top: 8%;
+		padding-bottom: 15%;
+	}
+
+	.screen:not(.main) {
+		margin-top: 15px;
+	}
+
+	.input-group-btn:last-child > .btn {
+		padding: 0 5px;
+	}
+
+	.testimonial {
+		padding-bottom: 30px;
+	}
+
+	.testimonial .rating {
+	    margin: 30px 0 30px 0;
+	}
+
+	.testimonial .arrow {
+		padding-top: 50px;
+	}
+
+	.pricing {
+		text-align: center;
+	}
+
+	.pricing .can-toggle__switch {
+		margin: 0 auto;
+	}
+
+	.pricing .more {
+		margin-bottom: 50px;
+	}
+
+	.pricing .starter {
+		width: auto;
+		padding: 65px 15px;
+		border-radius: 10px;
+		margin: 0 auto;
+		max-width: 75%;
+	}
+
+	.pricing .pro {
+		width: auto;
+		padding: 65px 15px;
+		border-radius: 10px;
+		margin: 50px auto;
+		max-width: 70%;
+		height: 550px;
+	}
+
+	.plan a.btn {
+		margin: 0 auto 40px auto;
+	}
+
+	.sitemap {
+		text-align: center;
+	}
+
+	.sitemap .img-responsive {
+		margin: 0 auto;
+	}
+
+	.sitemap .crop {
+		margin: 30px auto;
+	}
+
+	.sitemap .menu {
+		margin: 20px 0;
+	}
+
+	footer .creator, footer .freebies {
+		float: none!important;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+
+	footer img.img-responsive, footer .creator {
+		display: block;
+		margin: 0 auto;
+	}
+} 
+
+/*IE DECLARATIONS*/ 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 991px) {
+	.nav li>a:hover, .nav li>a:focus  {
+		background-color: transparent;
+	}
+
+	.nav li > a {
+		padding: 10px 8px;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 767px) {
+	.nav li > a {
+		padding: 10px 25px;
+	}
+}
