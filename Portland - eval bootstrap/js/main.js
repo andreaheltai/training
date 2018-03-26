@@ -1,4 +1,5 @@
-var list = document.getElementsByClassName("number");
+var list = Array.from(document.getElementsByClassName("number"));
+
 addArrowEvent();
 
 function addArrowEvent() {
@@ -19,7 +20,7 @@ function getCurrent() {
 }
 
 function selectPage(arrow) {
-	var currentPosition = getCurrent();
+	var currentPosition = list.indexOf(document.getElementsByClassName("number active")[0]);
 
 	//Establish visible pages
 	if (arrow.getAttribute("data-direction") === "next") {
@@ -53,7 +54,7 @@ function makeActive(position) {
 
 //Checks if element is last visible and transitions to next pages
 function rightTransition() {
-	current = getCurrent();
+	var current = list.indexOf(document.getElementsByClassName("number active")[0]);
 	if (current !== list.length-1 &&
 		list[current+1].classList.contains('no-display')) {
 	 	
@@ -87,7 +88,7 @@ function rightTransition() {
 }
 
 function leftTransition() {
-	current = getCurrent();
+	var current = list.indexOf(document.getElementsByClassName("number active")[0]);
 	if (current != 0 &&  
 		list[current-1].classList.contains('no-display')) {
 		
