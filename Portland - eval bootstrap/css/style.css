@@ -127,11 +127,11 @@ footer .navbar-nav,
 
 /*BACKGROUND DECLARATIONS*/
 .menus, .testimonials, 
-.shop .sort, 
-.shop .pages, 
+.shop .sort,  
 .shop .best-sellers, 
 .filter, 
-.product {
+.product,
+.row.pages {
 	background-color: #fff;
 }
 
@@ -177,6 +177,10 @@ footer .navbar-nav,
 
 .text-uppercase {
 letter-spacing: 2px;
+}
+
+.no-display {
+	display: none;
 }
 
 /*NAVBAR DECLARATIONS*/
@@ -629,28 +633,16 @@ input[type="radio"]:checked + .radio-label::after {
 	overflow: hidden;
 	border-radius: 5px;
 	margin-bottom: 30px;
-}
-
-.product.product-2, 
-.product.product-5,
-.product.product-7,  
-.product.product-10 {
-	margin-left: 15px;
-}
-
-.product.product-3, 
-.product.product-8,
-.product.product-11 {
-	margin-left: 25px;
+	margin-left: 22px;
 }
 
 .products .product-5 {
 	height: 385px;
-	width: 568px;
+	width: 563px;
 	overflow: hidden;
 	border-radius: 5px;
 	margin-bottom: 30px;
-	margin-right: 50px;
+	margin-left: 22px;
 	padding: 0;
 	z-index: 999;
 	position: relative;
@@ -728,6 +720,10 @@ input[type="radio"]:checked + .radio-label::after {
 .pages .arrow {
 	font-size: 16px;
 	position: relative;
+}
+
+.pages .arrow:hover {
+	cursor: pointer;
 }
 
 .arrow.pull-left {
@@ -888,6 +884,7 @@ footer .text a {
 	.products .product:not(.product-5) {
 		width: 222px;
 		height: 360px;
+		margin-left: 20px;
 	}
 
 	.product img {
@@ -896,7 +893,8 @@ footer .text a {
 
 	.products .product-5 {
 		height: 360px;
-		width: 469px;
+		width: 465px;
+		margin-left: 20px;
 	}
 
 	.review .quote {
@@ -932,6 +930,7 @@ footer .text a {
 	.products .product:not(.product-5) {
 		width: 166px;
 		height: 370px;
+		margin-left: 21px;
 	}
 
 	.product img {
@@ -940,7 +939,8 @@ footer .text a {
 
 	.products .product-5 {
 		height: 370px;
-		width: 357px;
+		width: 354px;
+		margin-left: 21px;
 	}
 
 	.product-5 div.btn-group.pull-right, 
