@@ -169,7 +169,7 @@
             </div>
         </div>
 
-        <div class="row products">
+        <div class="row all-products">
           <div class="filters col-lg-3 col-md-3 col-sm-3 col-xs-10 col-sm-offset-0 col-xs-offset-1">        
             <div class="filter filter-1">
               <div class="dropdown">
@@ -245,25 +245,25 @@
                 <p class="title text-uppercase middle">brands <a class="text-uppercase" href="#">all</a></p>
 
                 <div class="checkbox">
-                  <input type="checkbox" id="apple" checked>
+                  <input class="brand" type="checkbox" id="apple">
                   <label for="apple" class="different-label text-capitalize">Apple</label>
                   <span>32</span>
                 </div>
 
                 <div class="checkbox">
-                  <input type="checkbox" id="jbl">
+                  <input class="brand" type="checkbox" id="jbl">
                   <label for="jbl" class="different-label text-capitalize">JBL</label>
                   <span>14</span>
                 </div>
 
                 <div class="checkbox">
-                  <input type="checkbox" id="bose">
+                  <input class="brand" type="checkbox" id="bose">
                   <label for="bose" class="different-label text-capitalize">bose</label>
                   <span>3</span>
                 </div>
                       
                 <div class="checkbox">
-                  <input type="checkbox" id="nest">
+                  <input class="brand" type="checkbox" id="nest">
                   <label for="nest" class="different-label text-capitalize">nest</label>
                   <span>5</span>
                 </div>
@@ -313,21 +313,21 @@
 
           <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12">
             <div class="row">
-              <div class="product product-1 col-sm-4 col-xs-12">
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple">
                 <img class="img-responsive" src="images/product-1.png" alt="apple tv">
                 <p class="name text-capitalize">Apple TV 32GB</p>
                 <p class="color text-uppercase">Black</p>
                 <p class="price">£49.99</p> 
               </div>  
 
-              <div class="product product-2 col-sm-4 col-xs-12">
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
                 <img class="img-responsive" src="images/product-2.png" alt="pebble time">
                 <p class="name text-capitalize">pebble time</p>
                 <p class="color text-uppercase">red</p>
                 <p class="price">£29.99</p> 
               </div> 
 
-              <div class="product product-3 col-sm-4 col-xs-12">
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
                 <img class="img-responsive" src="images/product-3.png" alt="zendure">
                 <p class="name text-capitalize">Zendure 4-Port USB</p>
                 <p class="color text-uppercase">White</p>
@@ -336,14 +336,14 @@
             </div> <!-- closes row -->
 
             <div class="row">
-              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
                 <img class="img-responsive" src="images/product-4.png" alt="smart body analyzer">
                 <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
                 <p class="color text-uppercase">Black</p>
                 <p class="price">£39.99</p> 
               </div>
 
-              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12">
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12" data-brand="jbl">
                 <span class="price">$39.99</span>
                 <div class="details">     
                   <div class="product-info pull-left">
@@ -360,21 +360,21 @@
             </div> <!-- closes row -->
 
             <div class="row">
-              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
                 <img class="img-responsive" src="images/product-6.png" alt="ollo clip">
                 <p class="name text-capitalize">Ollo Clip New</p>
                 <p class="color text-uppercase">Silver</p>
                 <p class="price">£19.99</p> 
               </div>
 
-              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
                 <img class="img-responsive" src="images/product-7.png" alt="fitbit">
                 <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
                 <p class="color text-uppercase">black</p>
                 <p class="price">£19.99</p> 
               </div>  
 
-              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
                 <img class="img-responsive" src="images/product-8.png" alt="apple watch">
                 <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
                 <p class="color text-uppercase">White</p>
@@ -383,26 +383,678 @@
             </div> <!-- closes row -->
 
             <div class="row">
-              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
                 <img class="img-responsive" src="images/product-9.png" alt="bose soundlink">
                 <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
                 <p class="color text-uppercase">White</p>
                 <p class="price">£119.99</p> 
               </div>
 
-              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
                 <img class="img-responsive" src="images/product-10.png" alt="sonos">
                 <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
                 <p class="color text-uppercase">black</p>
                 <p class="price">£99.99</p> 
               </div>  
 
-              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="nest">
                 <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
                 <p class="price">£49.99</p> 
               </div> 
             </div> <!-- closes row -->
           </div>
+
+          <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12 no-display">
+            <div class="row">
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple"">
+                <img class="img-responsive" src="images/product1.png" alt="apple tv">
+                <p class="name text-capitalize">Apple TV 32GB</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£49.99</p> 
+              </div>  
+
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
+                <img class="img-responsive" src="images/product2.png" alt="pebble time">
+                <p class="name text-capitalize">pebble time</p>
+                <p class="color text-uppercase">red</p>
+                <p class="price">£29.99</p> 
+              </div> 
+
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
+                <img class="img-responsive" src="images/product3.png" alt="zendure">
+                <p class="name text-capitalize">Zendure 4-Port USB</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div>   
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
+                <img class="img-responsive" src="images/product4.png" alt="smart body analyzer">
+                <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£39.99</p> 
+              </div>
+
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12 different" data-brand="jbl">
+                <span class="price">$39.99</span>
+                <div class="details">     
+                  <div class="product-info pull-left">
+                    <p class="name text-capitalize">jbl charge 2+</p>
+                    <p class="color text-uppercase">black</p>
+                  </div>
+                  <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">16 GB</button>
+                    <button type="button" class="btn btn-default text-uppercase">buy now</button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>  
+              </div>
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
+                <img class="img-responsive" src="images/product6.png" alt="ollo clip">
+                <p class="name text-capitalize">Ollo Clip New</p>
+                <p class="color text-uppercase">Silver</p>
+                <p class="price">£19.99</p> 
+              </div>
+
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
+                <img class="img-responsive" src="images/product7.png" alt="fitbit">
+                <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£19.99</p> 
+              </div>  
+
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product8.png" alt="apple watch">
+                <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
+                <img class="img-responsive" src="images/product9.png" alt="bose soundlink">
+                <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£119.99</p> 
+              </div>
+
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
+                <img class="img-responsive" src="images/product10.png" alt="sonos">
+                <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£99.99</p> 
+              </div>  
+
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12 different" data-brand="nest">
+                <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+          </div>
+
+          <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12 no-display">
+            <div class="row">
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product-1.png" alt="apple tv">
+                <p class="name text-capitalize">Apple TV 32GB</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£49.99</p> 
+              </div>  
+
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
+                <img class="img-responsive" src="images/product-2.png" alt="pebble time">
+                <p class="name text-capitalize">pebble time</p>
+                <p class="color text-uppercase">red</p>
+                <p class="price">£29.99</p> 
+              </div> 
+
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
+                <img class="img-responsive" src="images/product-3.png" alt="zendure">
+                <p class="name text-capitalize">Zendure 4-Port USB</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div>   
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
+                <img class="img-responsive" src="images/product-4.png" alt="smart body analyzer">
+                <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£39.99</p> 
+              </div>
+
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12" data-brand="jbl">
+                <span class="price">$39.99</span>
+                <div class="details">     
+                  <div class="product-info pull-left">
+                    <p class="name text-capitalize">jbl charge 2+</p>
+                    <p class="color text-uppercase">black</p>
+                  </div>
+                  <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">16 GB</button>
+                    <button type="button" class="btn btn-default text-uppercase">buy now</button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>  
+              </div>
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
+                <img class="img-responsive" src="images/product-6.png" alt="ollo clip">
+                <p class="name text-capitalize">Ollo Clip New</p>
+                <p class="color text-uppercase">Silver</p>
+                <p class="price">£19.99</p> 
+              </div>
+
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
+                <img class="img-responsive" src="images/product-7.png" alt="fitbit">
+                <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£19.99</p> 
+              </div>  
+
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product-8.png" alt="apple watch">
+                <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
+                <img class="img-responsive" src="images/product-9.png" alt="bose soundlink">
+                <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£119.99</p> 
+              </div>
+
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
+                <img class="img-responsive" src="images/product-10.png" alt="sonos">
+                <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£99.99</p> 
+              </div>  
+
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="nest">
+                <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+          </div>
+
+          <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12 no-display">
+            <div class="row">
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product1.png" alt="apple tv">
+                <p class="name text-capitalize">Apple TV 32GB</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£49.99</p> 
+              </div>  
+
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
+                <img class="img-responsive" src="images/product2.png" alt="pebble time">
+                <p class="name text-capitalize">pebble time</p>
+                <p class="color text-uppercase">red</p>
+                <p class="price">£29.99</p> 
+              </div> 
+
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
+                <img class="img-responsive" src="images/product3.png" alt="zendure">
+                <p class="name text-capitalize">Zendure 4-Port USB</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div>   
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
+                <img class="img-responsive" src="images/product4.png" alt="smart body analyzer">
+                <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£39.99</p> 
+              </div>
+
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12 different" data-brand="jbl">
+                <span class="price">$39.99</span>
+                <div class="details">     
+                  <div class="product-info pull-left">
+                    <p class="name text-capitalize">jbl charge 2+</p>
+                    <p class="color text-uppercase">black</p>
+                  </div>
+                  <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">16 GB</button>
+                    <button type="button" class="btn btn-default text-uppercase">buy now</button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>  
+              </div>
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
+                <img class="img-responsive" src="images/product6.png" alt="ollo clip">
+                <p class="name text-capitalize">Ollo Clip New</p>
+                <p class="color text-uppercase">Silver</p>
+                <p class="price">£19.99</p> 
+              </div>
+
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
+                <img class="img-responsive" src="images/product7.png" alt="fitbit">
+                <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£19.99</p> 
+              </div>  
+
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product8.png" alt="apple watch">
+                <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
+                <img class="img-responsive" src="images/product9.png" alt="bose soundlink">
+                <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£119.99</p> 
+              </div>
+
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
+                <img class="img-responsive" src="images/product10.png" alt="sonos">
+                <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£99.99</p> 
+              </div>  
+
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12 different" data-brand="nest">
+                <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+          </div>
+
+          <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12 no-display">
+            <div class="row">
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product-1.png" alt="apple tv">
+                <p class="name text-capitalize">Apple TV 32GB</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£49.99</p> 
+              </div>  
+
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
+                <img class="img-responsive" src="images/product-2.png" alt="pebble time">
+                <p class="name text-capitalize">pebble time</p>
+                <p class="color text-uppercase">red</p>
+                <p class="price">£29.99</p> 
+              </div> 
+
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
+                <img class="img-responsive" src="images/product-3.png" alt="zendure">
+                <p class="name text-capitalize">Zendure 4-Port USB</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div>   
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
+                <img class="img-responsive" src="images/product-4.png" alt="smart body analyzer">
+                <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£39.99</p> 
+              </div>
+
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12" data-brand="jbl">
+                <span class="price">$39.99</span>
+                <div class="details">     
+                  <div class="product-info pull-left">
+                    <p class="name text-capitalize">jbl charge 2+</p>
+                    <p class="color text-uppercase">black</p>
+                  </div>
+                  <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">16 GB</button>
+                    <button type="button" class="btn btn-default text-uppercase">buy now</button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>  
+              </div>
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
+                <img class="img-responsive" src="images/product-6.png" alt="ollo clip">
+                <p class="name text-capitalize">Ollo Clip New</p>
+                <p class="color text-uppercase">Silver</p>
+                <p class="price">£19.99</p> 
+              </div>
+
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
+                <img class="img-responsive" src="images/product-7.png" alt="fitbit">
+                <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£19.99</p> 
+              </div>  
+
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product-8.png" alt="apple watch">
+                <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
+                <img class="img-responsive" src="images/product-9.png" alt="bose soundlink">
+                <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£119.99</p> 
+              </div>
+
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
+                <img class="img-responsive" src="images/product-10.png" alt="sonos">
+                <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£99.99</p> 
+              </div>  
+
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="nest">
+                <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+          </div>
+
+          <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12 no-display">
+            <div class="row">
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product1.png" alt="apple tv">
+                <p class="name text-capitalize">Apple TV 32GB</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£49.99</p> 
+              </div>  
+
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
+                <img class="img-responsive" src="images/product2.png" alt="pebble time">
+                <p class="name text-capitalize">pebble time</p>
+                <p class="color text-uppercase">red</p>
+                <p class="price">£29.99</p> 
+              </div> 
+
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
+                <img class="img-responsive" src="images/product3.png" alt="zendure">
+                <p class="name text-capitalize">Zendure 4-Port USB</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div>   
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
+                <img class="img-responsive" src="images/product4.png" alt="smart body analyzer">
+                <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£39.99</p> 
+              </div>
+
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12 different" data-brand="jbl">
+                <span class="price">$39.99</span>
+                <div class="details">     
+                  <div class="product-info pull-left">
+                    <p class="name text-capitalize">jbl charge 2+</p>
+                    <p class="color text-uppercase">black</p>
+                  </div>
+                  <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">16 GB</button>
+                    <button type="button" class="btn btn-default text-uppercase">buy now</button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>  
+              </div>
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
+                <img class="img-responsive" src="images/product6.png" alt="ollo clip">
+                <p class="name text-capitalize">Ollo Clip New</p>
+                <p class="color text-uppercase">Silver</p>
+                <p class="price">£19.99</p> 
+              </div>
+
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
+                <img class="img-responsive" src="images/product7.png" alt="fitbit">
+                <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£19.99</p> 
+              </div>  
+
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product8.png" alt="apple watch">
+                <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
+                <img class="img-responsive" src="images/product9.png" alt="bose soundlink">
+                <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£119.99</p> 
+              </div>
+
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
+                <img class="img-responsive" src="images/product10.png" alt="sonos">
+                <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£99.99</p> 
+              </div>  
+
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12 different" data-brand="nest">
+                <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+          </div>
+
+          <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12 no-display">
+            <div class="row"> 
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product-1.png" alt="apple tv">
+                <p class="name text-capitalize">Apple TV 32GB</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£49.99</p> 
+              </div>  
+
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
+                <img class="img-responsive" src="images/product-2.png" alt="pebble time">
+                <p class="name text-capitalize">pebble time</p>
+                <p class="color text-uppercase">red</p>
+                <p class="price">£29.99</p> 
+              </div> 
+
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
+                <img class="img-responsive" src="images/product-3.png" alt="zendure">
+                <p class="name text-capitalize">Zendure 4-Port USB</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div>   
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
+                <img class="img-responsive" src="images/product-4.png" alt="smart body analyzer">
+                <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£39.99</p> 
+              </div>
+
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12" data-brand="jbl">
+                <span class="price">$39.99</span>
+                <div class="details">     
+                  <div class="product-info pull-left">
+                    <p class="name text-capitalize">jbl charge 2+</p>
+                    <p class="color text-uppercase">black</p>
+                  </div>
+                  <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">16 GB</button>
+                    <button type="button" class="btn btn-default text-uppercase">buy now</button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>  
+              </div>
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
+                <img class="img-responsive" src="images/product-6.png" alt="ollo clip">
+                <p class="name text-capitalize">Ollo Clip New</p>
+                <p class="color text-uppercase">Silver</p>
+                <p class="price">£19.99</p> 
+              </div>
+
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
+                <img class="img-responsive" src="images/product-7.png" alt="fitbit">
+                <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£19.99</p> 
+              </div>  
+
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product-8.png" alt="apple watch">
+                <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
+                <img class="img-responsive" src="images/product-9.png" alt="bose soundlink">
+                <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£119.99</p> 
+              </div>
+
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
+                <img class="img-responsive" src="images/product-10.png" alt="sonos">
+                <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£99.99</p> 
+              </div>  
+
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="nest">
+                <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+          </div>
+
+          <div class="products col-lg-9 col-md-9 col-sm-9 col-xs-12 no-display">
+            <div class="row">
+              <div class="product product-1 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product1.png" alt="apple tv">
+                <p class="name text-capitalize">Apple TV 32GB</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£49.99</p> 
+              </div>  
+
+              <div class="product product-2 col-sm-4 col-xs-12" data-brand="pebble">
+                <img class="img-responsive" src="images/product2.png" alt="pebble time">
+                <p class="name text-capitalize">pebble time</p>
+                <p class="color text-uppercase">red</p>
+                <p class="price">£29.99</p> 
+              </div> 
+
+              <div class="product product-3 col-sm-4 col-xs-12" data-brand="zendure">
+                <img class="img-responsive" src="images/product3.png" alt="zendure">
+                <p class="name text-capitalize">Zendure 4-Port USB</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div>   
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="withings">
+                <img class="img-responsive" src="images/product4.png" alt="smart body analyzer">
+                <p class="name text-capitalize">Withings Smart Body Analyzer ws-50</p>
+                <p class="color text-uppercase">Black</p>
+                <p class="price">£39.99</p> 
+              </div>
+
+              <div class="product product-5 col-lg-8 col-md-8 col-sm-8 col-xs-12 different" data-brand="jbl">
+                <span class="price">$39.99</span>
+                <div class="details">     
+                  <div class="product-info pull-left">
+                    <p class="name text-capitalize">jbl charge 2+</p>
+                    <p class="color text-uppercase">black</p>
+                  </div>
+                  <div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">16 GB</button>
+                    <button type="button" class="btn btn-default text-uppercase">buy now</button>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>  
+              </div>
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-6 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="ollo">
+                <img class="img-responsive" src="images/product6.png" alt="ollo clip">
+                <p class="name text-capitalize">Ollo Clip New</p>
+                <p class="color text-uppercase">Silver</p>
+                <p class="price">£19.99</p> 
+              </div>
+
+              <div class="product product-7 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="fitbit">
+                <img class="img-responsive" src="images/product7.png" alt="fitbit">
+                <p class="name text-capitalize">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£19.99</p> 
+              </div>  
+
+              <div class="product product-8 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="apple">
+                <img class="img-responsive" src="images/product8.png" alt="apple watch">
+                <p class="name text-capitalize">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+
+            <div class="row">
+              <div class="product product-9 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="bose">
+                <img class="img-responsive" src="images/product9.png" alt="bose soundlink">
+                <p class="name text-capitalize">Bose SoundLink On-Ear Headphones</p>
+                <p class="color text-uppercase">White</p>
+                <p class="price">£119.99</p> 
+              </div>
+
+              <div class="product product-10 col-lg-4 col-md-4 col-sm-4 col-xs-12" data-brand="sonos">
+                <img class="img-responsive" src="images/product10.png" alt="sonos">
+                <p class="name text-capitalize">Sonos Play-1 Wireless HiFi System</p>
+                <p class="color text-uppercase">black</p>
+                <p class="price">£99.99</p> 
+              </div>  
+
+              <div class="product product-11 col-lg-4 col-md-4 col-sm-4 col-xs-12 different" data-brand="nest">
+                <p class="name text-capitalize">Nest Learning Thermostat, 3rd Generation</p>
+                <p class="price">£49.99</p> 
+              </div> 
+            </div> <!-- closes row -->
+          </div>
+         
         </div> <!-- closes row products -->
 
         <div class="row pages">
