@@ -168,6 +168,14 @@ footer .navbar-nav,
 	background: #fff url('../images/product-11.png') no-repeat center 0;
 }
 
+.product-5.different {
+	background: #fff url('../images/product5.png') no-repeat center 0;
+}
+
+.product-11.different {
+	background: #fff url('../images/product11.png') no-repeat center 0;
+}
+
 /*GENERAL DECLARATIONS */
 
 .radio label, 
@@ -751,6 +759,10 @@ input[type="radio"]:checked + .radio-label::after {
 	color: #b9bed1;
 	border-radius: 50%;
 	box-shadow: 0px 15px 30px grey;
+}
+
+.number:hover {
+	cursor: pointer;
 }
 
 /*BEST SELLERS DECLARATIONS*/
