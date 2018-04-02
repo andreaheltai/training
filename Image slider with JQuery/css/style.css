@@ -1,0 +1,232 @@
+/*FONT & GENERAL DECLARATIONS*/
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Cabin');
+
+body {
+	font-family: 'Cabin', sans-serif;
+	background-color: #fff;
+	color: #fff;
+	position: relative;
+}
+
+h1, h2 {
+	font-family: 'BioRhyme', serif;
+	padding: 30px 0 10px 0;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.no-display {
+	display: none;
+}
+
+/*MODAL DECLARATIONS*/
+.about {
+	color: #555;
+	background-color: #fff;
+	border-radius: 3px;
+	top: 20vh;
+	left: 0;
+	right: 0;
+	margin-left: 35%;
+	margin-right: 35%;
+	height: 75vh;
+	position: fixed;
+	z-index: 100;
+	padding: 0 20px 40px 40px;
+	overflow: hidden;
+}
+
+.all-info {
+	height: 60vh;
+	padding-right: 20px;
+	overflow-y: scroll;
+}
+
+.about h2 {
+	padding-bottom: 20px;	
+	top: 0;	
+	border-bottom: 1px solid rgba(245, 245, 245, 0.8);
+	margin: 0 auto 10px auto;
+	background-color: #fff;
+	z-index: 100;
+}
+
+.about .fa-times-circle {
+	position: absolute;
+	top: 15px;
+	right: 22px;
+	font-size: 16px;
+	color: #c5c5c5;
+}
+
+.shadow {
+	background-color: #555;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 99;
+}
+
+/*The scrollbar*/
+.all-info::-webkit-scrollbar {
+    width: 20px;
+    padding-right: 20px;
+}
+
+/*The track (progress bar) of the scrollbar.*/
+.all-info::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px #a0a0a0; 
+    border: 7px solid transparent;
+}
+
+/*The draggable scrolling handle.*/
+.all-info::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px #c5c5c5;
+    border: 7px solid transparent;
+    opacity: 0.6;
+    width: 5px;
+}
+
+
+/*HERO DECLARATIONS*/
+.text-title {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-shadow {
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 0 40px;
+	margin: 0 35%;
+}
+
+.description {
+	letter-spacing: 1px;
+	padding: 10px 0 25px 0;
+}
+
+.hr {
+	width: 50px;
+	height: 3px;
+	border-bottom: 2px solid rgba(241, 241, 241, 0.8);
+	margin: 0 auto;
+}
+
+.hero-image {
+	position: relative;
+	background: #fff no-repeat center 10%;
+	background-size: cover;
+	width: 100%;
+	height: 82vh;
+	margin-bottom: 5px;
+}
+
+.fa-info-circle {
+	position: absolute;
+	top: 40px;
+	right: 2vw;
+	font-size: 23px;
+	opacity: 0.7;
+	text-shadow: 0 0 3px #c5c5c5;
+	z-index: 999;
+}
+
+.fa-info-circle:hover {
+	transform: scale(1.25);
+}
+
+.arrow, .arr {
+	position: absolute;
+	color: #fff;
+	opacity: 0.7;
+	cursor: default;
+}
+
+.arrow {
+	top: 45%;
+	font-size: 60px;
+}
+
+.arrow:hover, .arr:hover, .fa-info-circle:hover{
+	opacity: 1;
+}
+
+.arrow:hover {
+	transform: scale(1.25);
+}
+
+.fa-angle-left, .fa-angle-double-left {
+	left: 20px;
+}
+
+.fa-angle-right, .fa-angle-double-right {
+	right: 20px;
+}
+
+
+/*THUMBNAIL DECLARATIONS*/
+
+.arr {
+	top: 40%;
+	font-size: 40px;
+}
+
+.arr:hover {
+	transform: scale(1.25);
+}
+
+.sml-img {
+	background: #fff no-repeat center center;
+	background-size: cover;
+	height: 17vh;
+	margin-bottom: 3px;
+}
+
+.sml-img:hover, .active {
+	opacity: 0.4;
+}
+
+.thumbnails {
+	position: relative;
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+	.sml-img:not(.last) {
+		border-right: none;
+	}
+
+	.text-shadow {
+		margin: 0 25%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.text-shadow, .about {
+		margin: 0 10%;
+	}
+
+	.text-shadow {
+		padding: 0 10px;
+	}
+
+	.arrow {
+		font-size: 50px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+}
