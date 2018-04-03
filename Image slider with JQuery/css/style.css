@@ -8,21 +8,50 @@ body {
 	position: relative;
 }
 
-h1, h2 {
+h1, .nav-tabs > li > a {
 	font-family: 'BioRhyme', serif;
-	padding: 30px 0 10px 0;
 }
 
 h1 {
 	font-size: 40px;
+	padding: 30px 0 10px 0;
 }
 
-h2 {
-	font-size: 30px;
+.nav-tabs > li > a {
+	font-size: 18px;
 }
 
 .no-display {
 	display: none;
+}
+
+/*Tooltip color*/
+.tooltip > .tooltip-inner {
+	background-color: #fff;
+	color: #555;
+	opacity: 0.8;
+}
+
+/*Tooltip arrow color*/
+.tooltip .tooltip-arrow {
+	border-bottom: 5px solid #fff!important;
+	opacity: 0.8;
+}
+
+/*Popover opacity*/
+.popover.fade.in {
+	opacity: 0.95;
+}
+
+/*Popover text color*/
+.popover-title, .popover-content {
+	color: #555;
+	font-family: 'Cabin', sans-serif;
+}
+
+/*No border on popover trigger click*/
+:focus {
+	outline: -webkit-focus-ring-color auto 0px;
 }
 
 /*MODAL DECLARATIONS*/
@@ -38,12 +67,12 @@ h2 {
 	height: 75vh;
 	position: fixed;
 	z-index: 100;
-	padding: 0 20px 40px 40px;
+	padding: 0 20px 10px 40px;
 	overflow: hidden;
 }
 
 .all-info {
-	height: 60vh;
+	height: 65vh;
 	padding-right: 20px;
 	overflow-y: scroll;
 }
@@ -94,6 +123,15 @@ h2 {
     border: 7px solid transparent;
     opacity: 0.6;
     width: 5px;
+}
+
+.nav.nav-tabs {
+	margin-top: 10px;
+}
+
+.tab-pane {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
@@ -148,23 +186,23 @@ h2 {
 	transform: scale(1.25);
 }
 
-.arrow, .arr {
+.arrow.fas, .arr {
 	position: absolute;
 	color: #fff;
 	opacity: 0.7;
 	cursor: default;
 }
 
-.arrow {
+.arrow.fas {
 	top: 45%;
 	font-size: 60px;
 }
 
-.arrow:hover, .arr:hover, .fa-info-circle:hover{
+.arrow.fas:hover, .arr:hover, .fa-info-circle:hover{
 	opacity: 1;
 }
 
-.arrow:hover {
+.arrow.fas:hover {
 	transform: scale(1.25);
 }
 
@@ -222,7 +260,7 @@ h2 {
 		padding: 0 10px;
 	}
 
-	.arrow {
+	.arrow.fas {
 		font-size: 50px;
 	}
 
