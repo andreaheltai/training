@@ -1,6 +1,13 @@
 var allImages = $('.sml-img');
 
 $(document).ready(function() {
+
+	//Opt-in for tooltips and popovers
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip();
+	  $('[data-toggle="popover"]').popover();
+	})
+
 	//Add click event to info circle
 	$('.fa-info-circle').click(function(){
 		$('.about').removeClass('no-display');
@@ -15,6 +22,12 @@ $(document).ready(function() {
 	//Add click event to modal background
 	$('.shadow').click(function(){
 		closeModal();
+	})
+
+	//Activate tabs
+	$('#trial-tabs a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
 	})
 
 	loadThumbnails();
@@ -39,7 +52,7 @@ function loadThumbnails(){
 
 //Sets hero image based on active thumbnail image
 function loadHeroImage(){
-	var bgr = $('.active').css('background-image');
+	var bgr = $('.sml-img.active').css('background-image');
 	$('.hero-image').css('background-image', bgr);
 }
 
@@ -89,7 +102,7 @@ function styleLastImg() {
 
 //Decide which image should be made active
 function goToNextImage(direction) {
-	var activeIndex = allImages.index($('.active'));
+	var activeIndex = allImages.index($('.sml-img.active'));
 	var lastVisible = allImages.index($('.sml-img').not('.no-display').last());
 	var firstVisible = allImages.index($('.sml-img').not('.no-display').first());
 
