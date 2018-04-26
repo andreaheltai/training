@@ -1,0 +1,43 @@
+footer {
+	@include har-reg (14px);
+	color: $dk-blue;
+	margin: 90px auto;
+	text-align: left;
+	
+	.logo {
+		padding-left: 0;
+		p {
+			margin-top: 5px;
+		}
+	}
+
+	li {
+		line-height: 30px;
+	}
+
+	li:hover {
+		color: $orange;
+	};
+	
+	.payment {
+		@include har-sbd(16px);
+		color: $orange;
+	}
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+		margin: 70px auto;
+		
+		.ft-list {
+			text-align: center;
+			list-style-position: inside;
+			padding: 0;
+		}
+
+		.payment + img {
+			margin: 0 auto;
+		}
+
+	}
+}
+

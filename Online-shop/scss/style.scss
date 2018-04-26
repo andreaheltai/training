@@ -1,0 +1,126 @@
+@import 'fonts';
+@import "bootstrap-custom.scss";
+@import 'vars';
+@import 'general-elements';
+@import 'header';
+@import 'product';
+@import 'cart-modal';
+@import 'newsletter';
+@import 'footer';
+
+
+/*Background declarations*/
+.products {
+	background-color: $grey;
+}
+
+.products .filter, .row.more {
+	background-color: $white;
+}
+
+.category {
+	margin-top: 120px;
+	@media screen and (max-width: 767px) {
+		margin-top: 50px;
+	}
+}
+
+/*Filter declarations*/
+
+.filter {
+	padding: 40px;
+	margin-bottom: 30px;
+	.filter-title {
+		@include har-bk(18px);
+		color: $orange;
+	}
+
+	ul.sections {
+		@include har-sbd(16px);
+		position: relative;
+		left: -40px;
+
+		li {
+			list-style-type: none;
+			a {
+				text-decoration: none;
+				line-height: 50px;
+				color: $dk-blue;
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+	}
+
+	div.sections {
+		@include har-sbd(16px);
+		
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		.checkbox .filter-label {
+			font-weight: 600;
+			position: relative;
+			padding-left: 30px;
+			line-height: 50px;
+		}
+
+		.checkbox .filter-label::before, .checkbox .filter-label::after {
+			position: absolute;
+			left: 0;
+			top: 18px;
+			background-color: #edf0f2;
+			content: "";
+			width: 15px;
+			height: 15px;
+		}
+
+		.checkbox .filter-label::after {
+			border: 5px solid $orange;
+			display: none;
+		}
+
+		input[type="checkbox"]:checked + .filter-label::after {
+			display: block;
+		}
+	}
+}
+
+
+/*Product declarations*/
+@media screen and (min-width: 768px) {
+	.col {
+		padding-right: 0;
+	}
+
+	.col {
+		padding-left: 30px;
+	}
+
+
+	.filters {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.more {
+		margin-left: 15px;
+	}
+}
+
+.more {
+	height: 60px;
+	.circle {
+		background-color: $orange;
+		border-radius: 50%;
+		width: 8px;
+		height: 8px;
+		display: inline-block;
+		position: relative;
+		top: 20px;
+		margin: 0 1px;
+	}
+}
+

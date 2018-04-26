@@ -1,0 +1,113 @@
+@import url("./fontawesome-all.css");
+
+.sm-menu {
+	@include har-reg(12px);
+	margin-top: 25px;
+	margin-bottom: 25px;
+	
+	.contact {
+		float: left;
+
+		@media screen and (max-width: 767px) {
+			float: none;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		span {
+			margin-right: 20px;
+		}
+		
+		i {
+			font-size: 18px;
+			color: $orange;
+			margin-right: 10px;
+		}
+	}
+
+
+	.social {
+		float: right;
+
+		@media screen and (max-width: 767px) {
+			float: none;
+			text-align: center;
+		}
+
+		a, a:hover {
+			color: $dk-blue;
+			text-decoration: none;
+		}
+
+		i {
+			margin-left: 15px;
+		}
+	}
+}
+
+
+.big-menu {
+	@include har-reg(16px);
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	@media screen and (max-width: 767px) {
+		text-align: right;
+	}
+
+	.navbar {
+		margin-bottom: 0px;
+	}
+	
+	@media screen and (min-width: 768px) {
+		.navbar-brand {
+			padding: 0px;
+		}
+	}
+		
+	.navbar-nav > li > a {
+		color: $dk-blue;
+		padding: 10px 20px;
+		&:hover, &:focus {
+			background-color: inherit;
+			color: $orange;
+		};
+	}
+
+	.navbar-left {
+		margin-left: 80px;
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			margin-left: 30px;
+		}
+	}
+
+	.navbar-right > li > a {
+		padding-right: 0px;
+		padding-left: 20px;
+		&:focus {
+			outline: none;
+		};
+	}
+
+	.cart {
+		position: relative;
+
+		.circle {
+			background-color: $dk-blue;
+			border-radius: 50%;
+			color: $white;
+			font-size: 10px;
+			height: 22px;
+			width: 22px;
+			position: absolute;
+			top: -8px;
+			left: 50%;
+			border: 2px solid $white;
+			
+		}
+	}
+
+	.icon-bar {
+		background-color: $dk-blue;
+	}
+}

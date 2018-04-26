@@ -1,0 +1,85 @@
+.product {
+	background-color: $white;
+	margin-bottom: 30px;
+	padding: 30px;
+	height: 370px;
+
+	.showcase, .colors {
+		margin: 0 auto;
+	}
+
+	.showcase {
+		width: auto;
+		height: 65%;
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			height: 45%;
+		}
+	}
+
+	.product-title, .price {
+		@include har-bd(18px);
+	}
+
+	.product-title {
+		color: $dk-blue;
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+	}	
+
+	.price {
+		color: $orange;
+	}
+
+	.sizes, .colors, .hr, .icons {
+		display: none;
+	}
+}
+
+.product:hover, .product:focus {
+	.showcase {
+		width: auto;
+		height: 25%;
+	}
+
+	.product-title {
+		color: $orange;
+		margin-bottom: 3vh;
+	}
+
+	.price {
+		display: none;
+	}
+
+	.sizes, .colors, .hr, .icons {
+		display: block;
+	}
+
+	.icons i {
+		margin: 0 10px;
+		font-size: 18px;
+		color: $dk-blue;
+		&:hover {
+			color: $orange;
+		};
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			margin: 0 4px;
+		}		
+	}
+
+	.sizes {
+		@include har-reg;
+		color: $dk-blue;
+		line-height: 40px;
+	}
+
+	.colors {
+		margin-top: 20px;
+	}
+
+	.hr {
+		margin: 30px;
+		@media screen and (min-width: 762px) and (max-width: 991px) {
+			margin: 20px;
+		}
+	}
+}

@@ -1,0 +1,102 @@
+/*Fonts*/
+@charset 'UTF-8';
+
+@import url('./fontawesome-all.css');
+
+@font-face {
+	font-family: 'Harmonia';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/HarmoniaSansProCyr-Regular.eot?#iefix') format('embedded-opentype');
+	src: url('../fonts/HarmoniaSansProCyr-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Harmonia';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/HarmoniaSansProCyr-Italic.eot?#iefix') format('embedded-opentype');
+	src: url('../fonts/HarmoniaSansProCyr-Italic.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Harmonia';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/HarmoniaSansProCyr-Bold.eot?#iefix') format('embedded-opentype');
+	src: url('../fonts/HarmoniaSansProCyr-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Harmonia';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/HarmoniaSansProCyr-Black.eot?#iefix') format('embedded-opentype');
+	src: url('../fonts/HarmoniaSansProCyr-Black.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Harmonia';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/HarmoniaSansProCyr-Light.eot?#iefix') format('embedded-opentype');
+	src: url('../fonts/HarmoniaSansProCyr-Light') format('opentype');
+}
+
+@font-face {
+	font-family: 'Titillium';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/TitilliumText22L006.eot?#iefix') format('embedded-opentype');
+	src: url('../fonts/TitilliumText22L006.otf') format('opentype');
+}
+
+/*Font mixins*/
+@mixin har-reg ($size : 14px) {
+	font-style: normal;
+	font-weight: 400;
+	font-family: Harmonia, sans-serif;
+	font-size: $size;
+}
+
+@mixin har-bd ($size : 14px) {
+	font-style: normal;
+	font-weight: 700;
+	font-family: Harmonia, sans-serif;
+	font-size: $size;
+} 
+
+@mixin har-bk ($size : 14px) {
+	font-style: normal;
+	font-weight: 900;
+	font-family: Harmonia, sans-serif;
+	font-size: $size;
+}
+
+@mixin har-lgt ($size : 14px) {
+	font-style: normal;
+	font-weight: 200;
+	font-family: Harmonia, sans-serif;
+	font-size: $size;
+}
+
+@mixin har-ita ($size : 14px) {
+	font-style: italic;
+	font-weight: 400;
+	font-family: Harmonia, sans-serif;
+	font-size: $size;
+} 
+
+@mixin har-sbd ($size : 14px) {
+	font-style: normal;
+	font-weight: 600;
+	font-family: Harmonia, sans-serif;
+	font-size: $size;
+}
+
+@mixin titi-xbd ($size : 14px) {
+	font-style: normal;
+	font-weight: 900;
+	font-family: Titillium, sans-serif;
+	font-size: $size;
+} 

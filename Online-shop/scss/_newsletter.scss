@@ -1,0 +1,68 @@
+/*Newsletter declarations*/
+.newsletter {
+	background-color: $white;
+	padding: 55px 40px;
+	margin-top: 120px;
+	margin-bottom: 120px;
+	.text-uppercase {
+		color: $orange;
+		@include har-bd (18px);
+	}
+
+	.more-info {
+		@include har-ita;		
+		margin-left: 25px;
+		@media screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	i {
+		font-size: 18px;
+		color: $orange;
+		margin-right: 10px;
+	}
+
+	input {
+		border: none;
+		display: inline;
+		width: 80%;
+		@include har-ita;
+		&::placeholder {
+			color: $text-grey;
+		};
+		&:focus {
+			outline: none;
+		};
+	}
+
+	.join-btn {
+		padding: 15px 30px;
+		background-color: $orange;
+		border-radius: 0px;
+		color: $white;
+		display: inline;
+		text-align: right;
+		@include har-sbd;
+	}
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		.nl-email {
+			margin: 20px auto;
+			position: relative;
+			left:30px;
+		}
+
+		input {
+			width: 175px;
+		}
+
+		.join-btn {
+			display: inline-block;
+			margin: 0 auto;
+		}
+	}
+}

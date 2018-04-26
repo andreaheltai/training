@@ -1,0 +1,19 @@
+body {
+	background-color: $white;
+	color: $dk-blue;
+} 
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+.hr {
+	border-bottom: 1px solid rgba(40, 49, 59, 0.1);
+	height: 1px;
+}
+
+.hidden {
+	display: none;
+}
+
+

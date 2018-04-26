@@ -1,0 +1,87 @@
+.modal {
+	@include har-reg(14px);
+	&.fade:not(.in).right .modal-dialog {
+		-webkit-transform: translate3d(25%, 0, 0);
+		transform: translate3d(25%, 0, 0);
+	}
+
+	.modal-dialog {
+		position:absolute;
+		top:0;
+		right:0;
+		margin:0;
+	}
+
+	.modal-content {
+		min-height:100vh;
+		border:0;
+		border-radius: 0px;
+		h4 {
+			font-size: 22px;
+			i {
+				color: $orange;
+				margin-right: 15px;
+			}
+		}
+		.cart-product {
+			border: 1px solid rgba(255, 89, 18, 0.5);
+			height: 150px;
+			width: 100%;
+			margin-top: 10px;
+			position: relative;
+			.close {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				display: inline;
+				z-index: 100;
+			}
+
+			.image {
+				position: relative;
+				height: 150px;				
+				text-align: center;
+				border-right: 1px solid rgba(204, 204, 204, 0.4);
+				img {					
+					max-height: 80%;  
+				    max-width: 80%; 
+				    width: auto;
+				    height: auto;
+				    position: absolute;  
+				    top: 0;  
+				    bottom: 0;  
+				    left: 0;  
+				    right: 0;  
+				    margin: auto;
+				}
+			}
+
+			.text {
+				padding: 15px 10px;
+				.name,  
+				.quantity-label .count {
+					color: $orange;
+				}
+				.name, .operation, .count {
+					font-weight: 600;
+				}
+				.operation {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.modal-footer {
+		background-color: inherit;
+		position: sticky;
+		bottom: 0;
+		right: 0;
+		height: 30px;
+		.btn {
+			color: $white;
+			background-color: $orange;
+			outline: none;
+		}
+	}
+}
