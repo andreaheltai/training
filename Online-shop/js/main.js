@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	addFilters();
 	addProducts();
+	getCart();
+	updateQuantityInCart();
+	addSeeCartEvent();
+	addUpdateCartButtonEvent();
+	deleteCartProductEvent();
+	addQuantityEvent();
 });
 
 function addFilters(){
