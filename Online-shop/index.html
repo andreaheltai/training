@@ -63,7 +63,7 @@
 				        <li><a href="#"><img src="./images/search-icon.png" alt="search icon"></a></li>
 				        <li><a href="#"><img src="./images/user-icon.png" alt="user icon"></a></li>
 				        <li>
-				        	<a class="cart" href="#">
+				        	<a class="cart" href="#" data-toggle="modal" data-target="#sidemenu">
 				        		<img src="./images/cart-icon.png" alt="cart icon">
 				        		<p class="circle text-center"><span>5</span></p>
 				        	</a>
@@ -75,6 +75,27 @@
 		</div>
 		<div class="hr"></div>
 	</header>
+
+	<!-- Sidemenu Right -->
+    <div class="modal fade right" id="sidemenu" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title text-capitalize"><i class="fas fa-shopping-cart"></i></span>your cart</h4>
+                </div>
+
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-update" data-dismiss="modal">Update Cart</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End of Sidemenu -->
+
 	
 	<div class="products">
 		<div class="container">
@@ -160,6 +181,7 @@
     <!-- Underscore -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="js/jsons.js"></script>
+    <script src="js/cart-functions.js"></script>
     <script src="js/main.js"></script>
 
     <script type="text/html" id="filterTemplate">
@@ -179,7 +201,7 @@
 
     <script type="text/html" id="productsTemplate">
 		<div class="product text-center">
-			<a href="./product.html" target="_blank">
+			<a href="./product.html">
 				<img class="showcase" src="./images/product-<%= count %>.png" alt="<%= desc %>">
 				<h4 class="product-title text-capitalize"> <%= name %> </h4>
 				<p class="price"> <%= price %> </p>
@@ -193,6 +215,29 @@
 				</div>
 			</a>
 		</div>		
+    </script>
+
+    <script type="text/html" id="cartProducts">
+        <div class="cart-product container" data-id="<%= index %>">
+            <div class="row">
+                <button type="button" class="close" data-id="<%= index %>""><span aria-hidden="true">×</span></button>
+                <div class="image col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <img class="img-responsive" src="<%= image %>" alt="product-image">
+                </div>
+                <div class="description col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <div class="text">
+                        <p class="name text-uppercase"><%= title %></p>
+                        <p class="price-label">Price: <span class="price"><%= price %></span></p>
+                        <p class="size-label">Size: <span class="size"><%= size %></span></p>
+                        <p class="quantity-label"> Quantity: 
+                            <span class="operation">-</span>
+                            <span class="count"><%= quantity %></span>
+                            <span class="operation">+</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </script>
 </body>
 </html>
