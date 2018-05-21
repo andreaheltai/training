@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9">
+	<meta http-equiv="X-UA-Compatible" content="IE=10">
+	<meta http-equiv="X-UA-Compatible" content="IE=11">
+	<title>Youtube Search</title> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="search-section">	
+			<div class="search input-group">
+				<input type="text" name="search" placeholder="Search Youtube">
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+
+		<div class="flex-container">			
+		</div>
+
+		<div class="modal" id="video-modal">
+			<div class="modal-header">
+				<h2 class="title">Title here</h2>
+				<i class="fas fa-times"></i>
+			</div>
+			<div class="modal-content" id="yt-player">
+				<p align="center"><iframe id="player" type="text/html" src="" frameborder="0"></iframe></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="close-modal">
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
