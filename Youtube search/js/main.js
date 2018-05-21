@@ -35,7 +35,7 @@ function createRequestURL() {
 	var maxResults = '8';
 	var q = getSearchQuery();
 	var type = 'video';
-	var key = 'AIzaSyB4WJTlslmr97J36SBpefgc-NPlsijK8vA';
+	var key = 'MY_API_KEY';
 	
 	var url = 'https://www.googleapis.com/youtube/v3/search?' + 
 		  'part=' + part + 
