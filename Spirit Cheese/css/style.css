@@ -1,0 +1,172 @@
+/*General*/
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Ubuntu');
+
+body {
+	background-color: #d25e07;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Page title*/
+h1, h2 {
+	font-family: 'Bowlby One SC', cursive;
+	color: #863c0a;
+	text-align: center;
+}
+
+h1 {
+	font-size: 10rem;
+}
+
+h2 {
+	font-size: 4rem;
+	margin: 50px 0 70px 0;
+}
+
+h1 .glyphicon {
+	font-size: 4rem;
+}
+
+.subtitle {
+	font-size: 4rem;
+	color: #fdfbfa;
+}
+
+.upper-text {
+	margin-bottom: 30px;
+}
+
+.main-text {
+	display: inline-block;
+	padding-top: 20px;
+}
+
+/*Box where questions appear*/
+.question-box, .result {
+	background-color: #f5a623;
+	color: #863c0a;
+	border: 1px solid rgba(134, 60, 10, 0.6);
+	margin-top: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Bowlby One SC', cursive;
+	text-align: center;
+}
+
+.result {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.radio-btn input[type="radio"] {
+	display: none;
+}
+
+.radio-btn .radio-label {
+	font-size: 3rem;
+	position: relative;
+	padding-left: 35px;
+	text-align: left;
+}
+
+.radio-btn .radio-label::before, .radio-btn .radio-label::after {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	border: 6px solid #fdfbfa;
+	border-radius: 50%;
+	content: "";
+	width: 20px;
+	height: 20px;
+}
+
+.radio-btn .radio-label::before {
+	background-color: #fdfbfa;
+}
+
+.radio-btn .radio-label::after {
+	background-color: #f5a623;
+	display: none;
+}
+
+.radio-btn input[type="radio"]:checked + .radio-label::after {
+	display: block;
+}
+
+.next {
+	background-color: #863c0a;
+	font-size: 4rem;
+	color: #fdfbfa;
+	border: 0px;
+	margin-top: 100px;
+}
+
+.next:focus {
+	outline: none;
+	background-color: #863c0a;
+	color: #fdfbfa;
+}
+
+.next:hover {
+	color: #333;
+	background-color: #d4d4d4;
+}
+
+.next .glyphicon {
+	font-size: 3rem;
+	padding-left: 10px;
+}
+
+.alert {
+	font-family: 'Ubuntu', sans-serif;
+	color: #d25e07;
+	font-size: 2rem;
+}
+
+/*Result*/
+.result .image {
+	background-repeat: no-repeat;
+	background-color: inherit;
+	background-position: center;
+	border-radius: 5px;
+	min-height: 300px;
+}
+
+h2.result-title {
+	margin-bottom: 30px;
+}
+
+.description {
+	color: #863c0a;
+	font-family: 'Unbuntu', sans-serif;
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 1199px) {
+	.next {
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 7rem;
+	}
+
+	.subtitle {
+		font-size: 3rem;
+	}
+
+	h2, .next {
+		font-size: 3rem;
+	}
+
+	.next .glyphicon {
+		font-size: 2.8rem;
+	}
+
+	.radio-btn .radio-label {
+		font-size: 2.5rem;
+	}
+}
+
+
